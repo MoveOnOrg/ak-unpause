@@ -34,8 +34,8 @@ def unpause(args):
 
 
 def aws_lambda(event, context):
-    return run_from_lamba(unpause, DESCRIPTION, ARG_DEFINITIONS, REQUIRED_ARGS, event)
+    return run_from_lamba(unpause, DESCRIPTION, ARG_DEFINITIONS, REQUIRED_ARGS, event, 'ak-unpause')
 
 
 if __name__ == '__main__':
-    run_from_cli(unpause, DESCRIPTION, ARG_DEFINITIONS, REQUIRED_ARGS)
+    run_from_cli(unpause, DESCRIPTION, ARG_DEFINITIONS, REQUIRED_ARGS, 'ak-unpause')
