@@ -1,5 +1,5 @@
 from actionkit.api.user import AKUserAPI
-from pywell.entry_points import run_from_cli, run_from_lamba
+from pywell.entry_points import run_from_cli, run_from_lambda
 from pywell.get_psql_results import get_psql_results
 
 
@@ -34,7 +34,7 @@ def unpause(args):
 
 
 def aws_lambda(event, context):
-    return run_from_lamba(unpause, DESCRIPTION, ARG_DEFINITIONS, REQUIRED_ARGS, event, 'ak-unpause')
+    return run_from_lambda(unpause, DESCRIPTION, ARG_DEFINITIONS, REQUIRED_ARGS, event, 'ak-unpause')
 
 
 if __name__ == '__main__':
