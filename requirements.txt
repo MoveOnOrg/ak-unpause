@@ -1,3 +1,4 @@
 psycopg2-binary==2.8.4
 -e git+https://github.com/MoveOnOrg/python-actionkit.git@public-master#egg=python-actionkit
 git+https://github.com/MoveOnOrg/pywell@main#egg=pywell
+django
